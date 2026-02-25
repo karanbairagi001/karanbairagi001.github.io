@@ -8,7 +8,7 @@ body {
 /* Select multiple elements */
 header,
 footer {
-    background-color: lightblue;
+    background-color: rgb(188, 173, 219);
     text-align: center;
     padding: 20px;
 }
@@ -20,7 +20,7 @@ footer {
 
 /* ID selector */
 #my-image {
-    box-shadow: 0 0 2px 1px black;
+    box-shadow: 0 0 2px 1px rgb(75, 105, 126);
 }
 
 /* Hobby list - square bullets */
@@ -30,7 +30,7 @@ footer {
 
 /* nth-child selector - odd items */
 .hobby-list li:nth-child(odd) {
-    background-color: #f2f2f2;
+    background-color: #a0e6e6;
 }
 
 /* Navigation styling */
@@ -47,8 +47,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    background-color: #dddddd;
-    border: 1px solid #000;
+    background-color: #839d98;
+    border: 1px solid #9b73ae;
     padding: 8px 12px;
     display: inline-block;
 }
@@ -57,5 +57,5 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a:focus {
     background-color: #999999;
-    color: white;
+    color: rgb(136, 178, 195);
 }
