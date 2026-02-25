@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> My Simple Website</title>
+    <title>My Simple Website</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Web Page</h1>
+    <h1 class="site-title">Welcome to My Web Page</h1>
+    
     <nav>
-        <a href="index.html">Home</a>
-        <a href="notes.html">HTML Notes</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="notes.html">HTML Notes</a></li>
+        </ul>
     </nav>
 </header>
 
 <main>
     <h2>About Me</h2>
 
-    <img src="photos/karan-1.jpeg" alt="Photo of Karan" width="200">
+    <img src="photos/karan-1.jpeg" alt="Photo of Karan" width="200" id="my-image">
     <img src="photos/karan-2.jpeg" alt="Photo of Karan" width="200">
 
     <p>
@@ -27,7 +30,7 @@
 
     <section>
         <h2>My Hobbies</h2>
-        <ul>
+        <ul class="hobby-list">
             <li>
                 <strong>Swimming:</strong> I love swimming as it is my passion.
             </li>

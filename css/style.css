@@ -1,43 +1,47 @@
-/* Inheritance - Body */
+/* 1. Inheritance - Body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin: 0;
+    line-height: 1.6;
 }
 
-/* Select multiple elements */
+/* 2. Select multiple elements */
 header,
 footer {
-    background-color:plum;
+    background-color: plum;
     text-align: center;
     padding: 20px;
 }
 
-/* Class selector */
+/* 3. Class selector */
 .site-title {
     color: darkblue;
+    margin: 0;
 }
 
-/* ID selector */
+/* 4. ID selector */
 #my-image {
-    box-shadow: 0 0 2px 1px rgb(75, 105, 126);
+    box-shadow: 0 0 2px 1px black;   /* assignment requires black */
+    margin: 10px 0;
 }
 
-/* Hobby list - square bullets */
+/* 5. Hobby list - square bullets */
 .hobby-list {
     list-style-type: square;
+    padding-left: 20px;
 }
 
-/* nth-child selector - odd items */
+/* 6. nth-child selector - odd items */
 .hobby-list li:nth-child(odd) {
     background-color: #a0e6e6;
 }
 
-/* Navigation styling */
+/* 7. Navigation styling */
 nav ul {
     list-style-type: none; 
     padding: 0;
-    margin: 0;   /* Added for better reset */
+    margin: 10px 0;
 }
 
 nav ul li {
@@ -51,11 +55,14 @@ nav ul li a {
     border: 1px solid #9b73ae;
     padding: 8px 12px;
     display: inline-block;
+    color: white;
+    border-radius: 4px;
+    transition: 0.3s ease;
 }
 
-/* Hover and focus */
+/* 8. Hover and focus */
 nav ul li a:hover,
 nav ul li a:focus {
-    background-color:olivedrab;
-    color:burlywood;
+    background-color: olivedrab;
+    color: burlywood;
 }
