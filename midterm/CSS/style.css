@@ -1,0 +1,111 @@
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color:#8fb9b7;
+margin:0;
+}
+
+/* Main container */
+
+.container{
+width:800px;
+margin:30px auto;
+background:#cfe3e2;
+box-shadow:0 0 8px rgba(0,0,0,0.2);
+}
+
+/* Header */
+
+header{
+position:relative;
+}
+
+header img{
+width:100%;
+display:block;
+}
+
+.site-title{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+font-size:42px;
+}
+
+/* Navigation */
+
+nav ul{
+display:flex;
+list-style:none;
+margin:0;
+padding:15px;
+background:#d6e6e5;
+justify-content:center;
+}
+
+nav li{
+border-right:1px solid grey;
+padding:0 30px;
+}
+
+nav li:last-child{
+border-right:none;
+}
+
+nav a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+
+/* Main content */
+
+main{
+padding:20px;
+}
+
+/* Article image */
+
+.starfish-image{
+float:left;
+width:10px;
+margin-right:5px;
+margin-bottom:5px;
+}
+
+/* Facts list */
+
+.facts li{
+margin-bottom:5px;
+}
+
+/* Form */
+
+form{
+border:1px solid grey;
+padding:15px;
+background:#dfeeee;
+margin-top:10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+width:100%;
+padding:6px;
+margin-bottom:10px;
+}
+
+textarea{
+height:100px;
+}
+
+/* Footer */
+
+footer{
+text-align:right;
+padding:10px;
+font-size:12px;
+color:#444;
+}
