@@ -1,111 +1,137 @@
+/* ================= GENERAL ================= */
+
+*{
+    box-sizing: border-box;   /* Keeps width exactly 1000px including padding & border */
+}
+
 body{
-font-family: Arial, Helvetica, sans-serif;
-background-color:#8fb9b7;
-margin:0;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#8dbab7; /* Page background */
 }
 
-/* Main container */
+/* Centered content width */
 
-.container{
-width:800px;
-margin:30px auto;
-background:#cfe3e2;
-box-shadow:0 0 8px rgba(0,0,0,0.2);
+header,
+nav,
+main,
+footer{
+    width:1000px;
+    margin:0 auto;
 }
 
-/* Header */
+
+/* ================= HEADER ================= */
 
 header{
-position:relative;
+    position:relative; /* Required for overlay */
 }
 
 header img{
-width:100%;
-display:block;
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display:block;
 }
 
-.site-title{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-color:white;
-font-size:42px;
+header h1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:white;
+    font-size:48px;
+    font-weight:normal;
 }
 
-/* Navigation */
+
+/* ================= NAVIGATION ================= */
+
+nav{
+    background-color:#c6dede;
+    border-bottom:1px solid gray;
+}
 
 nav ul{
-display:flex;
-list-style:none;
-margin:0;
-padding:15px;
-background:#d6e6e5;
-justify-content:center;
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex; /* Makes items stay in one row */
 }
 
 nav li{
-border-right:1px solid grey;
-padding:0 30px;
+    flex:1; /* Makes 3 equal sections */
+    text-align:center;
+    padding:15px 0;
+    border-right:1px solid gray;
 }
 
 nav li:last-child{
-border-right:none;
+    border-right:none;
 }
 
 nav a{
-text-decoration:none;
-color:black;
-font-weight:bold;
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
 }
 
-/* Main content */
+
+/* ================= MAIN CONTENT ================= */
 
 main{
-padding:20px;
+    background-color:#b7d1d0;
+    padding:20px;
 }
 
-/* Article image */
+/* Floating image for article */
 
-.starfish-image{
-float:left;
-width:10px;
-margin-right:5px;
-margin-bottom:5px;
+.float-img{
+    float:left;
+    width:250px;
+    margin:0 20px 15px 0;
 }
 
-/* Facts list */
+/* List styling */
 
-.facts li{
-margin-bottom:5px;
+ul{
+    padding-left:20px;
 }
 
-/* Form */
+
+/* ================= FORM ================= */
 
 form{
-border:1px solid grey;
-padding:15px;
-background:#dfeeee;
-margin-top:10px;
+    border:1px solid gray;
+    padding:20px;
+    margin-top:20px;
 }
 
-input[type="text"],
-input[type="email"],
+form input[type="text"],
+form input[type="email"],
+form textarea{
+    width:100%;
+    padding:8px;
+    margin-bottom:15px;
+}
+
 textarea{
-width:100%;
-padding:6px;
-margin-bottom:10px;
+    height:120px;
+    resize:none;
 }
 
-textarea{
-height:100px;
+button{
+    padding:8px 15px;
+    border:1px solid gray;
+    background-color:#e0f0f0;
+    cursor:pointer;
 }
 
-/* Footer */
+
+/* ================= FOOTER ================= */
 
 footer{
-text-align:right;
-padding:10px;
-font-size:12px;
-color:#444;
+    text-align:right;
+    padding:20px 0;
+    background-color:#b7d1d0;
 }
