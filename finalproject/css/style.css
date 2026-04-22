@@ -10,6 +10,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #e6e6e6;
   color: #222;
+  line-height: 1.6;
 }
 
 /* CENTER CONTENT */
@@ -17,6 +18,16 @@ header, section, footer, .location-box {
   max-width: 1200px;
   margin: auto;
   background: #fff;
+}
+
+/* GENERAL */
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
 /* HEADER */
@@ -29,7 +40,7 @@ header, section, footer, .location-box {
 }
 
 .logo img {
-  width:50px;
+  height:50px;
 }
 
 .nav-list {
