@@ -231,43 +231,11 @@ h2 {
 
 /* DESKTOP */
 @media (min-width: 760px) {
-
   .team-member {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: stretch;
   }
-
-  /* JOHN (image left, text right) */
-  .team-member:nth-of-type(1) img {
-    grid-column: 1;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .team-member:nth-of-type(1) h3,
-  .team-member:nth-of-type(1) h4,
-  .team-member:nth-of-type(1) p {
-    grid-column: 2;
-    background: #ffe6ac;
-    padding: 25px;
-  }
-
-  /* BOB (text left, image right) */
-  .team-member:nth-of-type(2) h3,
-  .team-member:nth-of-type(2) h4,
-  .team-member:nth-of-type(2) p {
-    grid-column: 1;
-    background: #ffe6ac;
-    padding: 25px;
-  }
-
-  .team-member:nth-of-type(2) img {
-    grid-column: 2;
-    height: 100%;
-    object-fit: cover;
-  }
-
 }
 
 /* JOHN  */
