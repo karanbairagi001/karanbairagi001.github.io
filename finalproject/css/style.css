@@ -206,23 +206,68 @@ h2 {
 }
 
 /* TEAM  */
-
 .team {
   padding: 40px;
 }
 
-/*  GRID EXACT */
+/* Mobile layout */
 .team-member {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  display: flex;
+  flex-direction: column;
 }
 
-/* IMAGE  */
-.team-member:nth-of-type(1) img {
-  grid-column: 1;
-  grid-row: 1;
-  height: 100%;
+.team-member img {
+  width: 100%;
+  height: auto;
+}
+
+/* Text styling */
+.team-member h3,
+.team-member h4,
+.team-member p {
+  background: #ffe6ac;
+  padding: 20px;
+}
+
+/* DESKTOP */
+@media (min-width: 760px) {
+
+  .team-member {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+
+  /* JOHN (image left, text right) */
+  .team-member:nth-of-type(1) img {
+    grid-column: 1;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .team-member:nth-of-type(1) h3,
+  .team-member:nth-of-type(1) h4,
+  .team-member:nth-of-type(1) p {
+    grid-column: 2;
+    background: #ffe6ac;
+    padding: 25px;
+  }
+
+  /* BOB (text left, image right) */
+  .team-member:nth-of-type(2) h3,
+  .team-member:nth-of-type(2) h4,
+  .team-member:nth-of-type(2) p {
+    grid-column: 1;
+    background: #ffe6ac;
+    padding: 25px;
+  }
+
+  .team-member:nth-of-type(2) img {
+    grid-column: 2;
+    height: 100%;
+    object-fit: cover;
+  }
+
 }
 
 /* JOHN  */
@@ -308,49 +353,4 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-}
-
-/* DESKTOP */
-@media (min-width: 760px) {
-
-    .about {
-        flex-direction: row;
-    }
-
-    .about img {
-        width: 45%;
-    }
-
-    .services {
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    .service-box:nth-of-type(1),
-    .service-box:nth-of-type(2) {
-        grid-column: span 3;
-    }
-
-    .service-box:nth-of-type(3),
-    .service-box:nth-of-type(4),
-    .service-box:nth-of-type(5) {
-        grid-column: span 2;
-    }
-
-    .team article {
-        display: flex;
-        gap: 20px;
-    }
-
-    .team article img {
-        width: 50%;
-    }
-
-    .team-info {
-        width: 50%;
-    }
-
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 }
